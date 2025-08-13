@@ -29,3 +29,57 @@ body {
 a {
   text-decoration: none;
 }
+
+/* ======= Header Styles ====== */
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin: 0 auto; 
+  padding: 1.5rem;
+  padding-left:  4rem; 
+  padding-right: 7rem;
+  border-bottom: 2px solid var(--corBorda);
+
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; 
+  color: var(--corTexto);
+}
+
+.logo img {
+  width: 300px ; 
+}
+
+.logo h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Estilo da Navegação */
+nav .menu {
+  display: flex; 
+  list-style: none; 
+  gap: 2.5rem; 
+}
+
+nav .menu a {
+  color: var(--textoSuave);
+  font-weight: 500;
+  transition: color 0.2s ease-in-out; 
+}
+
+/* Estilo para o link ativo e hover */
+nav .menu a:hover,
+nav .menu a.active {
+  color: var(--corPrimaria); 
+}
+
+
+.cart-icon img {
+  width: 24px; 
+}
