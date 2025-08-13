@@ -83,10 +83,12 @@ main {
   background-size: contain; 
   padding-top: 6rem;
   padding-bottom: 6rem;
+  background-color: rgb(244, 244, 244);
+  border-bottom: #e7e7e7 5px solid;
 }
 
 .hero-content {
-  max-width: 1380px; 
+  width: 100; 
   margin: 0;
   padding-left: 4rem;
   padding-right: 7rem;
@@ -120,4 +122,65 @@ main {
 
 .btn-primary:hover {
   background-color: #026b1d; 
+}
+
+
+/* ======= Product Grid Section ====== */
+.products-section {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 4rem 4rem 6rem 4rem; 
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.product-card {
+  background-color: var(--corFundo); 
+  text-align: center;
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.product-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-image-container {
+  background-color: var(
+    --cinzaClaro
+  ); 
+  padding: 1.5rem;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover; 
+}
+
+.product-info {
+  padding: 1rem;
+}
+
+.product-info h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--corTexto);
+  margin-bottom: 0.25rem;
+}
+
+.product-info .price {
+  font-size: 1rem;
+  color: var(--textoSuave);
 }
